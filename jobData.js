@@ -8,7 +8,7 @@ const url = 'https://in.indeed.com/';
 
 let jobDataExtracter=async (job,city) => {
     try {
-        const browser = await puppeteer.launch({ headless: false, defaultViewport: false, args: ['--start-maximied', '--no-sandbox',
+        const browser = await puppeteer.launch({ headless: false, defaultViewport: false, args: ['--no-sandbox',
         '--disable-setuid-sandbox'] });
         const page = await browser.newPage();
         await page.goto(url);
