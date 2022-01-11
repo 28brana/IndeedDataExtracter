@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="header">
+        <h1>Indeed Job Data Extracter</h1>
+    </div>
+    <div id="main-container">
+        <form id="form">
+            <div class="input">
+                <h2 class="title">What</h2>
+                <input id="what" name="what" type="text" placeholder="Job title, keywords or company"> 
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="input">
+                <h2 class="title">Where</h2>
+                <input id="where" name="where" type="text" placeholder="City, state, or pin code">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <button id="submit-btn" type="submit">Find jobs</button>
+        </form>
+
+        <div id="loader">
+            <div class="progress">
+                <div class="progress-value"></div>
+            </div>
+            <div id="download-box">
+               <p id="download-title"></p>
+               <p id="download"></p>
+            </div>
+          
+        </div>
+
+    </div>
+  
+    <script src="send.js"></script>
+
+</body>
+</html>
