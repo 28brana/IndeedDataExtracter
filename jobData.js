@@ -5,6 +5,7 @@ const url = 'https://in.indeed.com/';
 // const city = 'Ludhiana, Punjab';
 // const job = 'Web developer';
 
+ 
 
 let jobDataExtracter=async (job,city) => {
     try {
