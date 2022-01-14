@@ -7,7 +7,7 @@ html{
     font-family: 'Poppins', sans-serif;
 }
 #header{
-    padding: 2em 0;
+    padding: 3em 0;
     color: #164081;
     /* border:2px solid red; */
     text-align: center;
@@ -108,3 +108,17 @@ html{
         border-color: red;
         box-shadow:0 3px 6px #ff000054;
     }
+
+#errorWindow{
+    top:0;
+    padding: 0.2em 0;
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    background-color: rgba(241, 3, 3, 0.692);
+    width: 100%;
+    position: fixed;
+    height: 50px;
+    text-align: center;
+    display: none;
+}

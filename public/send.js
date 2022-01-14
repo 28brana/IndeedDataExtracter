@@ -13,8 +13,6 @@ let progressID;
 
 form.addEventListener("submit", (event) => {
 
-
-    
     event.preventDefault();
 
     what = document.getElementById("what").value;
@@ -52,7 +50,9 @@ form.addEventListener("submit", (event) => {
         finishedWork(path);
     })
     .catch((err)=>{
-        console.log(err)
+        console.log(err);
+        document.getElementById("errorWindow").style.display="block";
+
     })
 
 })
