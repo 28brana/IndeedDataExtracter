@@ -8,8 +8,7 @@ const url = 'https://in.indeed.com/';
 
 let jobDataExtracter=async (job,city) => {
     try {
-        const browser = await puppeteer.launch({ 
-            args: ["--no-sandbox", "--disable-setuid-sandbox"] });
+        const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox'] });
         const page = await browser.newPage();
         await page.goto(url);
         await page.waitForSelector('input[type="text"]', { visible: true });
